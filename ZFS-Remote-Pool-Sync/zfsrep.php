@@ -26,15 +26,13 @@ $config["snapshot_datasets"][] = "zroot/photoshop";
 $config["keep_snapshots"] = 10; //MAXIMUM SNAPSHOTS
 $config["snapshot_interval"] = 60*24; //minute //SNAPSHOT INTERVAL
 
-$config["sync"] = false; // DO SYNCING
+$config["sync"] = true; // DO SYNCING
 $config["sync_datasets"][] = "zroot/backup:storage/davies";
 $config["sync_datasets"][] = "zroot/nexus:storage/davies";
 $config["sync_datasets"][] = "zroot/storage/vm/webservice:storage/davies";
-$config["sync_datasets"][] = "zroot/storage/vm/minecraft:storage/davies";
 $config["sync_datasets"][] = "zroot/storage/vm/redmine:storage/davies";
-//$config["sync_datasets"][] = "zroot/storage/vm/game:storage/davies";
 
-$config["sync_node"] = "backup.systech.hu"; //SYNC NODE
+$config["sync_node"] = "backup-server"; //SYNC NODE
 $config["sync_interval"] = 0; //minute //SYNC INTERVAL
 
 $config["ssh_port"] = "9997";
